@@ -1,0 +1,937 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Start */
+
+.header {
+    background-color: #fc03f0;
+    width: 100%;
+}
+
+.folio {
+    color: rgb(247, 244, 244);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #320130;
+    letter-spacing: 2px;
+}
+
+.navbar-main li {
+    display: inline-block;
+}
+
+.navbar-main li a {
+    color: #320130;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar-main li a:hover {
+    text-decoration: underline white;
+    color: white;
+}
+
+/* Navbar End */
+
+
+/* Main Section Start */
+
+.main {
+    height: 80vh;
+    width: 100%;
+    padding: 50px;
+    margin-top: 45px;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    border: 1px solid black none;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-box:hover {
+    box-shadow: 10px 10px 20px 5px #320130;
+
+}
+
+.text {
+    text-align: center;
+    font-weight: 500;
+}
+
+.text-1 {
+    color: #fc03f0;
+    font-size: 15px;
+}
+
+.text-2 {
+    color: #320130;
+    font-size: 35px;
+}
+
+.text-3 {
+    color: #320130;
+    font-size: 20px;
+}
+
+span {
+    color: #fc03f0;
+}
+
+.para{
+    padding-top: 20px;
+    font-weight: 300;
+}
+.image-1 {
+    padding: 20px 10px;
+}
+
+/* Main Section End */
+
+/* About Section Start */
+
+.about {
+    padding: 10px 0;
+    padding-bottom: 70px;
+}
+
+.about-main {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.about-content {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-col {
+    width: 45%;
+}
+
+.left-col img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.right-col {
+    width: 55%;
+}
+
+.right-col .right-text {
+    font-size: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fc03f0;
+    font-size: 16px;
+    color: #320130;
+    border-radius: 6px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Services Section */
+
+.service {
+    padding: 40px 0;
+    background-color: black;
+}
+
+.services {
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+}
+
+.service-me {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+    padding: 100px 20px 100px 20px;
+}
+
+.card {
+    width: calc( 33% - 20px );
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #320130;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #82107e;
+}
+
+.web {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p {
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Skills Section */
+
+.skill {
+    padding: 60px 0;
+}
+
+.skills-me {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.skills-content {
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-left {
+    width: 45%;
+    padding-right: 15px ;
+}
+
+.skill-head {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.skill-right {
+    width: 55%;
+    padding-left: 15px ;
+}
+
+.bars {
+    margin-bottom: 12px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.same {
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    background-color: #82107e;
+}
+
+.html::before {
+    width: 90%;
+}
+
+.css::before {
+    width: 75%;
+}
+
+.js::before {
+    width: 60%;
+}
+
+.btstrp::before {
+    width: 80%;
+}
+
+.react::before {
+    width: 50%;
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 40px 0;
+}
+
+.con-txt {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-content {
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    width: 40%;
+    padding-right: 25px;
+}
+
+.context {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #7e047a;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.con {
+    margin-top: -10px;
+    padding-bottom: 20px;
+}
+
+.boxc {
+    /* align-items: center; */
+    text-align: center;
+}
+
+.bi .bi-geo-alt-fill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-right {
+    width: 60%;
+    padding: 20px 0 20px 25px;
+    /* padding-left: 25px; */
+    text-align: center;
+}
+
+form {
+    padding: 50px 0 50px 15px;
+    background-color: lightgray;
+}
+
+form h3 {
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* .fix {
+    text-align: left;
+}
+
+.fix input {
+    text-align:right ;
+} */
+
+.input-box {
+    padding-bottom: 25px;
+}
+
+.input {
+    width: 50%;
+    height: 45px;
+}
+
+.input-box textarea {
+    width: 50%;
+    height: 55px;
+}
+
+.send-btn {
+    padding: 8px 17px;
+    color: black;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 1s ease;
+}
+
+.send-btn:hover {
+    background-color: black;
+    color: bisque;
+}
+
+/* Media queries */
+
+@media screen and (max-width:1400px){
+    .about {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar-main li a {
+        margin-left: 20px;
+        font-size: 11px;
+    }
+
+    .text-1 {
+        font-size: 10px;
+    }
+    
+    .text-2 {
+        font-size: 26px;
+    }
+    
+    .text-3 {
+        font-size: 14px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+    .image-1 {
+        height: 310px;
+        width: 180px;
+    }
+
+    .main {
+        padding: 35px;
+        margin-top: 35px;
+    }
+    
+    .main-box {
+        padding: 0 60px;
+    }
+
+
+    .about {
+        margin-top: -35px;
+    }
+
+    .about-me {
+        font-size: 18px;
+    }
+
+    .about-content {
+        padding: 0 50px;
+    }
+
+    .left-col img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .right-col .right-text {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 12px;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+
+    .service-me {
+        font-size: 18px;
+    }
+
+    .service {
+        padding: 30px 0;
+    }
+    
+    .service-content {
+        padding: 90px 16px 90px 16px;
+    }
+    
+    .card {
+        padding: 8px 18px;
+    }
+    
+    .web {
+        font-size: 15px;
+    }
+    
+    p {
+        padding-top: 13px;
+        font-size: 9px;
+    }
+
+
+    .skill {
+        padding: 50px 0;
+    }
+    
+    .skills-me {
+        font-size: 18px;
+    }
+
+    .skills-content {
+        padding: 35px 90px;
+    }
+
+    .skill-head {
+    font-size: 18px;
+    }
+
+    .same {
+        font-size: 16px;
+    }
+    
+    .line {
+        height: 4px;
+        width: 100%;
+    }
+
+
+    .contact {
+        padding: 32px 0;
+    }
+    
+    .con-txt {
+        font-size: 18px;
+    }
+    
+    .contact-content {
+        padding: 15px 70px;
+    }
+
+    .context {
+        font-size: 16px;
+    }
+
+    .iconc h3 {
+        font-size: 16px;
+    }
+
+    .contact-right {
+        padding: 20px 0 20px 25px;
+    }
+    
+    form {
+        padding: 40px 0 40px 10px;
+    }
+    
+    form h3 {
+        padding: 17px;
+        font-size: 18px;
+    }
+
+    .input-box {
+        padding-bottom: 20px;
+    }
+    
+    .input {
+        width: 50%;
+        height: 40px;
+    }
+    
+    .input-box textarea {
+        width: 50%;
+        height: 50px;
+    }
+    
+    .send-btn {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .logo {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .navbar-main li a {
+        font-size: 6px;
+    }
+
+    .text-1 {
+        font-size: 7px;
+    }
+    
+    .text-2 {
+        font-size: 18px;
+    }
+    
+    .text-3 {
+        font-size: 10px;
+    }
+
+    .para{
+        font-size: 8px;
+    }
+    .image-1 {
+        height: 270px;
+        width: 155px;
+    }
+
+    .main {
+        padding: 20px;
+        margin-top: 25px;
+    }
+    
+    .main-box {
+        padding: 0 40px;
+    }
+
+    .about {
+        margin-top: -80px;
+    }
+
+    .about-me {
+        font-size: 14px;
+    }
+
+    .about-content {
+        padding: 0 40px;
+    }
+
+    .left-col img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .right-col .right-text {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 8px;
+        border-radius: 4px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .service-me {
+        font-size: 14px;
+    }
+
+    .service {
+        padding: 23px 0;
+    }
+    
+    .service-content {
+        padding: 80px 13px 80px 13px;
+    }
+    
+    .card {
+        padding: 6px 16px;
+    }
+    
+    .web {
+        font-size: 12px;
+    }
+    
+    p {
+        padding-top: 12px;
+        font-size: 7px;
+    }
+
+    .skill {
+        padding: 40px 0;
+    }
+    
+    .skills-me {
+        font-size: 14px;
+    }
+
+    .skills-content {
+        padding: 30px 80px;
+    }
+
+    .skill-head {
+    font-size: 14px;
+    }
+
+    .same {
+        font-size: 14px;
+    }
+    
+    .line {
+        height: 3px;
+        width: 100%;
+    }
+
+    .contact {
+        padding: 24px 0;
+    }
+    
+    .con-txt {
+        font-size: 14px;
+    }
+    
+    .contact-content {
+        padding: 10px 60px;
+    }
+
+    .context {
+        font-size: 14px;
+    }
+
+    .iconc h3 {
+        font-size: 13px;
+    }
+
+    .contact-right {
+        padding: 14px 0 14px 20px;
+    }
+    
+    form {
+        padding: 30px 0 30px 5px;
+    }
+    
+    form h3 {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .input-box {
+        padding-bottom: 14px;
+    }
+    
+    .input {
+        width: 50%;
+        height: 25px;
+    }
+    
+    .input-box textarea {
+        width: 50%;
+        height: 35px;
+    }
+    
+    .send-btn {
+        padding: 4px 11px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .logo {
+        font-size: 0.4rem;
+        margin-left: 6px;
+    }
+
+    .navbar-main li a {
+        font-size: 2px;
+    }
+
+    .text-1 {
+        font-size: 4px;
+    }
+    
+    .text-2 {
+        font-size: 12px;
+    }
+    
+    .text-3 {
+        font-size: 6px;
+    }
+
+    .para{
+        font-size: 5px;
+    }
+    .image-1 {
+        height: 230px;
+        width: 130px;
+    }
+
+    .main {
+        padding: 12px;
+        margin-top: 15px;
+    }
+    
+    .main-box {
+        padding: 0 20px;
+    }
+
+    .about {
+        margin-top: -160px;
+    }
+
+    .about-me {
+        font-size: 10px;
+    }
+
+    .about-content {
+        padding: 0 20px;
+    }
+
+    .left-col img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .right-col .right-text {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 5px;
+        border-radius: 3px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .service-me {
+        font-size: 10px;
+    }
+
+    .service {
+        padding: 16px 0;
+    }
+    
+    .service-content {
+        padding: 70px 12px 70px 12px;
+    }
+    
+    .card {
+        padding: 4px 14px;
+    }
+    
+    .web {
+        font-size: 10px;
+    }
+    
+    p {
+        padding-top: 10px;
+        font-size: 6px;
+    }
+
+    .skill {
+        padding: 30px 0;
+    }
+    
+    .skills-me {
+        font-size: 10px;
+    }
+
+    .skills-content {
+        padding: 25px 70px;
+    }
+
+    .skill-head {
+    font-size: 12px;
+    }
+
+    .same {
+        font-size: 12px;
+    }
+    
+    .line {
+        height: 2px;
+        width: 100%;
+    }
+
+    .contact {
+        padding: 18px 0;
+    }
+    
+    .con-txt {
+        font-size: 10px;
+    }
+    
+    .contact-content {
+        padding: 10px 60px;
+    }
+
+    .context {
+        font-size: 10px;
+    }
+
+    .iconc h3 {
+        font-size: 8px;
+    }
+
+    .contact-right {
+        padding: 10px 0 10px 15px;
+    }
+    
+    form {
+        padding: 20px 0 20px 0px;
+    }
+    
+    form h3 {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .input-box {
+        padding-bottom: 10px;
+    }
+    
+    .input {
+        width: 50%;
+        height: 15px;
+    }
+    
+    .input-box textarea {
+        width: 50%;
+        height: 25px;
+    }
+    
+    .send-btn {
+        padding: 3px 8px;
+        font-size: 8px;
+    }
+}
+
