@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home {
+    min-height: 100vh;
+    background: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 30px 35px 0px 35px;
+    transform: translateY(-100%);
+    animation: up 850ms ease-in 850ms forwards;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.navbar h2 {
+    color: rgb(14, 223, 14);
+    letter-spacing: 4px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+span {
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(237, 245, 237);
+    transition: 1s;
+    letter-spacing: 1.4px;
+    
+}
+
+.navbar ul li a:hover{
+    color: rgb(14, 223, 14);
+    text-decoration: underline white;
+    
+}
+
+.text {
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: move 1s ease-in-out;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.text h2 {
+    font-size: 53px;
+    margin-bottom: 6px;
+    color: rgb(14, 223, 14);
+    font-family: 'Koulen', cursive;
+    letter-spacing: 5px;
+}
+
+.text p {
+    color:rgb(237, 245, 237);
+    font-size: 16px;
+}
+
+.text a {
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    font-size: 18px;
+    font-weight: 510;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 23px;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.text a:hover {
+    background-color: rgb(201, 240, 191);
+    color: black;
+}
+
+/* For Responsive */
+
+@media screen and (max-width:850px){
+    .navbar {
+        font-size: 10px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .text p {
+        font-size: 10px;
+    }
+
+    .text a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .navbar {
+        font-size: 5px;
+    }
+
+    .text h2 {
+        font-size: 12.5px;
+    }
+
+    .text p {
+        font-size: 5px;
+    }
+
+    .text a {
+        font-size: 5px;
+    }
+
+    .navbar ul li {
+        margin-left: 25px;
+    }
+}
